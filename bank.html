@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bank Dashboard</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+	<header>
+		<h1 class="text-5xl text-center mt-5">Welcome To <span class="font-semibold text-amber-400">Bank Dashboard</span></h1>
+	</header>
+	<main>
+		<section class="mt-12 w-9/12 mx-auto">
+			<div class="grid grid-cols-3 gap-4 text-white">
+				<div class="bg-green-500 p-7 rounded-md">
+					<h3 class="text-3xl">Deposit</h3>
+					<h5 class="text-5xl mt-1">$<span id="deposit-total">00</span></h5>
+				</div>
+				<div class="bg-yellow-500 p-7 rounded-md">
+					<h3 class="text-3xl">Withdraw</h3>
+					<h5 class="text-5xl mt-1">$00</h5>
+				</div>
+				<div class="bg-blue-400 p-7 rounded-md">
+					<h3 class="text-3xl">Balance</h3>
+					<h5 class="text-5xl mt-1">$<span id="balance-total">1240</span></h5>
+				</div>
+			</div>
+		</section>
+		<!-- Withdrawl & Deposit -->
+		<section class="mt-12 w-9/12 mx-auto">
+			<div class="grid grid-cols-2 gap-4">
+				<div class="bg-orange-500 p-7 rounded-md">
+					<h3 class="text-3xl  text-white">Please Deposit</h3>
+					<input class="block w-9/12 mt-3 pb-3" placeholder="$ Please Input Deposit Amount" type="number" name="number" id="deposit">
+					<button id="deposit-btn" class="bg-green-600 mt-5 px-10 py-2 text-2xl rounded-md  text-white">Deposit</button>
+				</div>
+				<div class="bg-red-500 p-7 rounded-md"> 
+					<h3 class="text-3xl text-white">Please Withdraw</h3>
+					<input class="block w-9/12 mt-3 pb-3" placeholder="$ Please Input Withdraw Amount" type="number" name="number" id="withdraw">
+					<button id="withdraw-btn" class="bg-yellow-500 mt-5 px-10 py-2 text-2xl rounded-md text-white">Withdraw</button>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="./js/deposit.js"></script>
+</body>
+</html>
