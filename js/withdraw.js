@@ -7,9 +7,6 @@
   if(isNaN(newWithdrawAmount)){
 	alert("Please Provide Number");
 	return;
-  }else if(newWithdrawAmount > previouseBalanceTotal){
-	alert("Please Provide Under The Total Balance")
-	return;
   }
 
   // Withdraw Total
